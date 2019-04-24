@@ -1,0 +1,13 @@
+<ul *ngIf="!show">
+  <li *ngFor="let h of elementos; let i = index">
+    <app-simpson [src]="h"></app-simpson>
+  </li>
+</ul>
+
+<app-simpson></app-simpson>
+<button *ngIf="show" (click)="showLista()">Show Lista</button>
+<button *ngIf="!show" (click)="hideLista()">Hide Lista</button>
+
+<div>
+  Hola
+</div>
